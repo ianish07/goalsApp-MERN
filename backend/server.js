@@ -14,6 +14,7 @@ app.use(express.urlencoded({extended: false}))
 
 //route
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 //custom middleware to overwrite default express err
 app.use(errorHandler)
