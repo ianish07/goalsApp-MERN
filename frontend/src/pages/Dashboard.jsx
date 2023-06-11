@@ -21,6 +21,7 @@ function Dashboard() {
     if(!user) {
       navigate('/login')
     }
+    
     dispatch(getGoals())
 
     return () => {
